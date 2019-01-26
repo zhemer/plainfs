@@ -10,12 +10,10 @@ FS structure changed, documentations need to be updated.
 
 Filesystem structure
 
-Filesystem has no superblock and directories. File names and inodes are stored
-in single place in structure dinode. You can see structure in source code.
+Filesystem has no superblock and directories. File names and inodes are stored in single place in structure dinode.
 Filesystem has one file table stored in first logical block of partition.
-Therefore number of files is limited to BLK_SIZE/sizeof(struct dinode).
-That equals to 25 files (if dinode size is 20 bytes).
-After the table files' data goes.
+Therefore number of files is limited to BLK_SIZE/sizeof(struct dinode), that equals to 25 files (if dinode size is 20 bytes).
+After the files table data goes.
 
 block | content
 ---------------
