@@ -1,0 +1,29 @@
+PlainFS by Sergey Zhemerdeev <zhseal0@gmail.com>
+Version 0.2.1
+
+Filesystem structure
+
+0.2.1 - 27 September 2007
+Source code revision.
+
+0.2 - 10 September 2007
+FS structure changed, thereby documentation need to be updated.
+I'm goin to do that soon.
+
+Filesystem has no superblock and directories. File names and inodes are stored
+in single place in structure dinode. You can see structure in source code.
+Filesystem has one file table stored in first logical block of partition.
+Therefore number of files is limited to BLK_SIZE/sizeof(struct dinode).
+That equals to 25 files (if dinode size is 20 bytes).
+After the table files' data goes.
+
+block | content
+---------------
+0     | file table
+1     | first file's data
+2     | second file's data
+...   | ...
+n     | last file's data
+n+1   | rest of partition - unused
+
+As you can see the filesystem structure is very simple.
