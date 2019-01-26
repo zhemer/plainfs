@@ -1,14 +1,14 @@
 PlainFS by Sergey Zhemerdeev <zhseal0@gmail.com>
 Version 0.2.1
-
-Filesystem structure
+Plainfs is Linux kernel module written for educational purpose
 
 0.2.1 - 27 September 2007
 Source code revision.
 
 0.2 - 10 September 2007
-FS structure changed, thereby documentation need to be updated.
-I'm goin to do that soon.
+FS structure changed, documentations need to be updated.
+
+Filesystem structure
 
 Filesystem has no superblock and directories. File names and inodes are stored
 in single place in structure dinode. You can see structure in source code.
