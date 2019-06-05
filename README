@@ -6,7 +6,7 @@ Plainfs is Linux kernel module written for educational purpose
 Source code revision.
 
 0.2 - 10 September 2007
-FS structure changed, documentations need to be updated.
+FS structure is changed, mkfs is added.
 
 Filesystem structure
 
