@@ -23,5 +23,3 @@ block | content
 ...   | ...
 n     | last file's data
 n+1   | rest of partition - unused
-
-As you can see the filesystem structure is very simple.
